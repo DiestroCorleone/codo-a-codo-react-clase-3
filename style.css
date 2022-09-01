@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 300ms;
+}
+
+body {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-image: url(img/back-image.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+p,
+h1 {
+  text-shadow: 5px 5px 5px black;
+}
+
+h1 {
+  font-family: "Qwitcher Grypen", serif;
+  font-size: 4rem;
+  color: whitesmoke;
+}
+
+h2 {
+  color: purple;
+}
+
+p,
+button,
+article {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
+p,
+button {
+  color: whitesmoke;
+}
+
+main {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+aside {
+  width: 50%;
+}
+
+article {
+  background-image: linear-gradient(to right, whitesmoke, rgb(201, 201, 201));
+  width: auto;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+main,
+aside {
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 1px 1px 2px black;
+  background-image: linear-gradient(to right, purple, rgb(59, 1, 59));
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
