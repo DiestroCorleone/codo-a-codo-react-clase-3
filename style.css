@@ -5,7 +5,6 @@
 }
 
 body {
-  max-width: 100hw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -43,11 +42,11 @@ button {
 }
 
 main {
-  width: 50%;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem;
 }
 
+main,
 aside {
   width: 50%;
 }
@@ -87,13 +86,23 @@ article:hover {
   box-shadow: 5px 5px 20px black;
 }
 
+article:hover {
+  transform: scale(110%);
+}
+
 @media screen and (max-width: 800px) {
   body {
     flex-direction: column;
+    justify-content: space-around;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   main,
   aside {
-    width: 100%;
+    width: auto;
+    padding: 1rem;
   }
 }
