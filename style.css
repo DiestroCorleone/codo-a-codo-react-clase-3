@@ -5,7 +5,7 @@
 }
 
 body {
-  max-width: 100%;
+  max-width: 100hw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -45,6 +45,7 @@ button {
 main {
   width: 50%;
   background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
 }
 
 aside {
@@ -52,10 +53,11 @@ aside {
 }
 
 article {
-  background-image: linear-gradient(to right, whitesmoke, rgb(201, 201, 201));
+  background-image: linear-gradient(to right, whitesmoke, rgb(122, 122, 122));
   width: auto;
   margin: 0 auto;
   padding: 2rem;
+  border-radius: 10px;
 }
 
 main,
@@ -69,12 +71,29 @@ button {
   padding: 1rem;
   border-radius: 2rem;
   border: none;
-  box-shadow: 1px 1px 2px black;
   background-image: linear-gradient(to right, purple, rgb(59, 1, 59));
   font-size: 2rem;
   cursor: pointer;
 }
 
-button:hover {
+button,
+article {
+  box-shadow: 5px 5px 10px black;
+}
+
+button:hover,
+article:hover {
   opacity: 0.8;
+  box-shadow: 5px 5px 20px black;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+
+  main,
+  aside {
+    width: 100%;
+  }
 }
